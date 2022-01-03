@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint lib"
   },
-  "author": "",
+  "author": "Alex Grozav <alex@grozav.com>",
   "license": "MIT",
   "dependencies": {
     "chalk": "5.0.0",
