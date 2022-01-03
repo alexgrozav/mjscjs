@@ -1,6 +1,6 @@
 {
   "name": "mjscjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Transform typescript output to .mjs and .cjs compatible code. One codebase to rule them all.",
   "main": "lib/index.js",
   "type": "module",
