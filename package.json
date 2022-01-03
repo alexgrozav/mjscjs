@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint lib"
+    "lint": "eslint lib",
+    "release": "np"
   },
   "author": "Alex Grozav <alex@grozav.com>",
   "license": "MIT",
@@ -24,7 +25,8 @@
     "@babel/core": "7.16.7",
     "@babel/eslint-parser": "7.16.5",
     "@babel/preset-env": "7.16.7",
-    "eslint": "8.6.0"
+    "eslint": "8.6.0",
+    "np": "7.6.0"
   },
   "repository": {
     "type": "git",
