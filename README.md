@@ -19,7 +19,7 @@ For `mjscjs` to work properly, please make sure your **tsconfig.json** specifies
         "rootDir": "./src",
         "baseUrl": ".",
         "paths": {
-            // ...
+            "@example/*": ["./src/*"]
         }
     }
 }
