@@ -1,0 +1,33 @@
+{
+  "name": "mjscjs",
+  "version": "1.0.0",
+  "description": "Transform typescript output to .mjs and .cjs compatible code. One codebase to rule them all.",
+  "main": "lib/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint lib"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "5.0.0",
+    "commander": "8.3.0",
+    "deepmerge": "4.2.2",
+    "glob": "7.2.0",
+    "tsconfig": "7.0.0"
+  },
+  "bin": {
+    "mjscjs": "./lib/index.js"
+  },
+  "devDependencies": {
+    "@babel/core": "7.16.7",
+    "@babel/eslint-parser": "7.16.5",
+    "@babel/preset-env": "7.16.7",
+    "eslint": "8.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inkline/inkline.git"
+  }
+}
