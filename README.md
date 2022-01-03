@@ -1,6 +1,13 @@
 # mjscjs
 
-Transform typescript output to .mjs and .cjs compatible code. One codebase to rule them all.
+Transform typescript output to `.mjs` and `.cjs` compatible code. One codebase to rule them all.
+
+This simple utility will ensure you deliver packages using latest ES standards. It relies on two separate typescript **tsconfig.json** configurations to generate `esnext` and `commonjs` modules. After build, `mjscjs` will process all the generated files:
+- Renames all your files to `.mjs` and `.cjs` respectively
+- Renames all your sourcemaps to `.mjs.map` and `.cjs.map`
+- Replaces all your imports to use `.mjs` and requires to use `.cjs`
+- Replaces all your sourcemap references
+- Replaces all your **tsconfig.json** paths aliases with relative imports and requires
 
 ## Installation
 
@@ -83,7 +90,7 @@ To make things easier, add `mjscjs` to your **package.json** scripts and run the
 }
 ```
 
-### Alternative Usage
+## Alternative Usage
 
 **Attention** The non-typescript usage is work in progress and not properly tested. Contributions are welcome.
 
@@ -93,3 +100,11 @@ When working with a non-typescript project, you can specify the module type, bui
 npx mjscjs --target . --buildDir './build' --srcDir './src' --module esm
 npx mjscjs -t . -b './build' -s './src' -m esm
 ```
+
+## Contributing
+
+Contributions are welcome! Please raise an issue to discuss any problem or feature request.
+
+## Copyright and license
+
+Code copyright 2022 Alex Grozav. Code released under the [MIT License](./LICENSE).
