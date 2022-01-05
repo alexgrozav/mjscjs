@@ -1,13 +1,18 @@
 # mjscjs
 
-Transform typescript output to `.mjs` and `.cjs` compatible code. One codebase to rule them all.
+> Transform typescript output to `.mjs` and `.cjs` compatible code. One codebase to rule them all.
 
 This simple utility will ensure you deliver packages using latest ES standards. It relies on two separate typescript **tsconfig.json** configurations to generate `esnext` and `commonjs` modules. After build, `mjscjs` will process all the generated files:
-- Renames all your files to `.mjs` and `.cjs` respectively
-- Renames all your sourcemaps to `.mjs.map` and `.cjs.map`
-- Replaces all your imports to use `.mjs` and requires to use `.cjs`
-- Replaces all your sourcemap references
-- Replaces all your **tsconfig.json** paths aliases with relative imports and requires
+
+✅ Renames all your files to `.mjs` and `.cjs` respectively
+
+✅ Renames all your sourcemaps to `.mjs.map` and `.cjs.map`
+
+✅ Replaces all your imports to use `.mjs` and requires to use `.cjs`
+
+✅ Replaces all your sourcemap references
+
+✅ Replaces all your **tsconfig.json** paths aliases with relative imports and requires
 
 ## Installation
 
