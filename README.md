@@ -2,6 +2,13 @@
 
 > Transform typescript output to `.mjs` and `.cjs` compatible code. One codebase to rule them all.
 
+<a href="https://www.npmjs.com/package/mjscjs">
+  <img src="https://img.shields.io/npm/v/mjscjs.svg" alt="npm version">
+</a>
+<a href="https://www.npmjs.com/package/mjscjs">
+  <img src="https://img.shields.io/npm/dm/mjscjs.svg" alt="Downloads">
+</a>
+    
 This simple utility will ensure you deliver packages using latest ES standards. It relies on two separate typescript **tsconfig.json** configurations to generate `esnext` and `commonjs` modules. After build, `mjscjs` will process all the generated files:
 
 ✅ Renames all your files to `.mjs` and `.cjs` respectively
