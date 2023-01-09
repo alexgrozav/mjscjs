@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "lint": "eslint lib",
-    "release": "np"
+    "release": "np",
+    "test": "echo 'No tests available'"
   },
   "author": "Alex Grozav <alex@grozav.com>",
   "license": "MIT",
